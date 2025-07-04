@@ -23,6 +23,6 @@ function logo() {
   if (validUser.nivel === 1) {
     window.location.href = "admin.html";
   } else {
-    window.location.href = "user.html";
+    window.location.href = "usuario.html";
   }
 }
