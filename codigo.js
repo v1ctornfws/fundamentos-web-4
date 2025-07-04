@@ -21,7 +21,7 @@ function logo(){
   if(username === "fernando" && password === "fer.123"){
     window.location.href = "admin.html";
   } else if(username === "raquel" && password === "raq.123"){
-    window.location.href = "useruario.html";
+    window.location.href = "usuario.html";
   } else {
     alert("Usuario o contraseña incorrectos");
   }
