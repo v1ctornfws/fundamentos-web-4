@@ -1,82 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUMAR DOS NUMEROS - ACT 2.3</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="estilos.css">
+	
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
-    <h1>BOTONES DE SUMAR, RESTAR, MULTIPLICAR Y DIVIDIR</h1>
-    <form action="" id="boton-form">
-        <label for="num1">Numero 1:</label>
-        <input type="number" id="num1" name="num1"><br><br>
-
-        <label for="num2">Numero 2:</label>
-        <input type="number" id="num2" name="num2"><br><br>
-
-        <button type="button" onclick="sumarNumeros()">Sumar</button>
-        <br><br>
-        <button type="button" onclick="restarNumeros()">Restar</button>
-        <br><br>
-        <button type="button" onclick="multiNumeros()">Multiplicar</button>
-        <br><br>
-        <button type="button" onclick="divisNumeros()">Dividir</button>
-        <br><br>
-        <p id="resultado">Resultado :</p>
-    </form>
-    <script>
-        function sumarNumeros() {
-            var num1 = parseFloat(document.getElementById("num1").value);
-            var num2 = parseFloat(document.getElementById("num2").value);
-
-            if (isNaN(num1) || isNaN(num2)) {
-                document.getElementById("resultado").textContent = "Por favor, ingrese numeros validos.";
-                return;
-            }
-            var suma = num1 + num2;
-
-            document.getElementById("resultado").textContent = "Resultado: " + suma;
-        }
-        function restarNumeros() {
-            var num1 = parseFloat(document.getElementById("num1").value);
-            var num2 = parseFloat(document.getElementById("num2").value);
-
-            if (isNaN(num1) || isNaN(num2)) {
-                document.getElementById("resultado").textContent = "Por favor, ingrese numeros validos.";
-                return;
-            }
-            var suma = num1 - num2;
-
-            document.getElementById("resultado").textContent = "Resultado: " + suma;
-        }
-        function multiNumeros() {
-            var num1 = parseFloat(document.getElementById("num1").value);
-            var num2 = parseFloat(document.getElementById("num2").value);
-
-            if (isNaN(num1) || isNaN(num2)) {
-                document.getElementById("resultado").textContent = "Por favor, ingrese numeros validos.";
-                return;
-            }
-            var suma = num1 * num2;
-
-            document.getElementById("resultado").textContent = "Resultado: " + suma;
-        }
-        function divisNumeros() {
-            var num1 = parseFloat(document.getElementById("num1").value);
-            var num2 = parseFloat(document.getElementById("num2").value);
-
-            if (isNaN(num1) || isNaN(num2)) {
-                document.getElementById("resultado").textContent = "Por favor, ingrese numeros validos.";
-                return;
-            }
-            var suma = num1 / num2;
-
-            document.getElementById("resultado").textContent = "Resultado: " + suma;
-        }
-    </script>
+	<div class="contenedor">
+		<h2>Acceso</h2>
+		<form id="loginform" action="">
+			<div class="grupo">
+				<label for="username">Usuario:</label>
+				<input type="text" id="username" name="" required>
+			</div>
+			
+			<div class="grupo">
+				<label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required> 	
+			</div>
+			<input onclick="logo();"type="button" value="Acceder" id="enviar">
+              
+			<!--<button type="submit" onclick="logo()">Acceder</button>-->
+		</form>
+        
+	</div>
+<script src="codigo.js"></script>
 </body>
-
 </html>
